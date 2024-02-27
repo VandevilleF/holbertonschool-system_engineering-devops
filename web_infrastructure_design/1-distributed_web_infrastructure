@@ -1,0 +1,35 @@
+![alt text](<Dist WEB Infra.png>)
+
+
+- For every additional element, why you are adding it
+deploy two or more active system instances and can be used to improve scalability as well as provide high availability.
+Load balancer acts as the “traffic cop”:
+	Distributes client requests or network load efficiently across multiple servers
+	Ensures high availability and reliability by sending requests only to servers that are online
+	Provides the flexibility to add or subtract servers as demand dictates
+
+- What distribution algorithm your load balancer is configured with and how it works
+Round Robin – Requests are distributed across the group of servers sequentially.
+
+- Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+My load balancer is enabling an Active-Active setup.
+	Active-Active solutions deploy two or more active system instances, all instances handle requests concurrently.
+	Active-Passive solutions deploy an active instance that handles requests and a passive instance that is on standby.
+
+- How a database Primary-Replica (Master-Slave) cluster works
+In a Primary-Replica (Master-Slave) cluster, the Primary node handles all write operations while replicating data to one or more Replica nodes. The Replica nodes serve as read-only copies of the data, synchronizing with the Primary node to ensure data consistency and redundancy.
+
+- What is the difference between the Primary node and the Replica node in regard to the application
+	Primary Node: Responsible for handling all write operations, such as inserts, updates, and deletes. It ensures data consistency and integrity by processing changes to the database.
+	Replica Node: Acts as a read-only copy of the data, serving read queries to offload the Primary node and improve read scalability. It synchronously replicates data from the Primary node to stay up to date.
+
+- Where are SPOF
+	Load Balancer: If the load balancer fails, all incoming traffic won't be spread among servers, causing a complete service outage.
+	Database: If the database server goes down, the website can't access or update data, potentially causing interruptions or data loss.
+
+- Security issues (no firewall, no HTTPS)
+	Without a firewall, the infrastructure is vulnerable to various attacks like DDoS, unauthorized access, and malicious activities.
+	HTTPS encryption is vital for securing communication between clients and servers. Without it, risking data breaches and privacy violations.
+
+- No monitoring
+Without monitoring tools, there's no visibility into performance, health, or security. Monitoring helps detect issues such as server failures, or security breaches. Without it, problems may go unnoticed until they cause major disruptions or damages to the website and its users.
