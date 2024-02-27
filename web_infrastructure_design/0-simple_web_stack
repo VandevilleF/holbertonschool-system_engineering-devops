@@ -21,3 +21,12 @@ The database stores and organizes the data used by the web application. This can
 
 - What is the server using to communicate with the computer of the user requesting the website
 The web server typically uses the HTTP (or HTTPS for secure communication) protocol to communicate with the user's computer requesting the website. HTTP is the standard protocol for data transfer on the web, allowing the web server to respond to requests from users' web browsers and provide the requested files.
+
+- SPOF
+A single point of failure (SPOF) is a part of a system that, if it fails, will stop the entire system from working. SPOFs are undesirable in any system with a goal of high availability or reliability, be it a business practice, software application, or other industrial system.
+
+- Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+During this time, the website or web application may be unavailable to users, resulting in downtime.
+
+- Cannot scale if too much incoming traffic
+The problem is when too many people try to visit the website at once. This can make the site slow or even crash.
