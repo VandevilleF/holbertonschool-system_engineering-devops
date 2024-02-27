@@ -1,0 +1,23 @@
+![alt text](<Network basic (2).png>)
+
+
+- What is a server
+Servers are located in datacenters which are buildings that host hundreds, or even thousands of computers (servers). You can think of a server as a computer without a keyboard, mouse, or screen, that is accessible only by a network. A server can be physical or virtual. A server runs an OS (operating system).
+
+- What is the role of the domain name
+A domain name is a human-readable address used to access a website. It translates complex IP addresses into easy-to-remember names.
+
+- What type of DNS record www is in www.foobar.com
+In the DNS record for www.foobar.com, "www" is typically a CNAME (Canonical Name) record. This type of record points to another record (never directly an IP address).
+
+- What is the role of the web server
+The web server is software that responds to HTTP requests from clients, and provides the requested files such as web pages. It also manages the communication protocols between the client and the server, ensuring efficient data transfer.
+
+- What is the role of the application server
+The application server is software that manages and executes web applications. It interprets user requests, communicates with the database if necessary, performs the requested operations, and returns the results to the web server for display in the user's browser. Application servers are often used to host dynamic web applications.
+
+- What is the role of the database
+The database stores and organizes the data used by the web application. This can include information about users, blog posts, products in an online store, etc. The application server communicates with the database to retrieve, store, or update the data needed for the operation of the application.
+
+- What is the server using to communicate with the computer of the user requesting the website
+The web server typically uses the HTTP (or HTTPS for secure communication) protocol to communicate with the user's computer requesting the website. HTTP is the standard protocol for data transfer on the web, allowing the web server to respond to requests from users' web browsers and provide the requested files.
